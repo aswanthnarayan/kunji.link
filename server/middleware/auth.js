@@ -8,7 +8,7 @@ module.exports = (req, res, next) => {
   if (!token) {
     return res.status(401).json({
       success: false,
-      message: 'No token, authorization denied'
+      message: 'Please Login first'
     });
   }
 
@@ -20,7 +20,7 @@ module.exports = (req, res, next) => {
   } catch (err) {
     res.status(401).json({
       success: false,
-      message: 'Token is not valid'
+      message: 'Access token is invalid, Logout and login again'
     });
   }
 };
