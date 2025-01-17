@@ -16,7 +16,8 @@ const corsOptions = {
     'https://kunji-link.vercel.app', 
     'https://kunjilink.vercel.app',
     'https://kunjilink-frontend-git-main-aswanthnarayans-projects.vercel.app',
-    'https://kunjilink-frontend-rdplczwop-aswanthnarayans-projects.vercel.app'
+    'https://kunjilink-frontend-rdplczwop-aswanthnarayans-projects.vercel.app',
+    'https://kunjilink-backend.vercel.app'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
