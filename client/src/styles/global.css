@@ -1,0 +1,22 @@
+/* Toast styles */
+.toaster-custom {
+  position: relative;
+}
+
+.toaster-custom button[aria-label="close"] {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  padding: 4px;
+  border-radius: 4px;
+  color: #9ca3af;
+  transition: color 0.2s;
+  opacity: 0.7;
+}
+
+.toaster-custom button[aria-label="close"]:hover {
+  color: #fff;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+}
