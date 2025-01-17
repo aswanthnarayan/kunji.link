@@ -14,9 +14,9 @@ const corsOptions = {
     'http://localhost:5173',
     'http://localhost:3000',
     'https://kunji-link.vercel.app', 
-    'https://kunjilink.vercel.app' ,
-    'https://kunjilink-frontend-git-main-aswanthnarayans-projects.vercel.app/' ,
-    'https://kunjilink-frontend-rdplczwop-aswanthnarayans-projects.vercel.app/' ,
+    'https://kunjilink.vercel.app',
+    'https://kunjilink-frontend-git-main-aswanthnarayans-projects.vercel.app',
+    'https://kunjilink-frontend-rdplczwop-aswanthnarayans-projects.vercel.app'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
@@ -61,4 +61,6 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
