@@ -13,11 +13,8 @@ const corsOptions = {
   origin: [
     'http://localhost:5173',
     'http://localhost:3000',
-    'https://kunji-link.vercel.app', 
-    'https://kunjilink.vercel.app',
-    'https://kunjilink-frontend-git-main-aswanthnarayans-projects.vercel.app',
-    'https://kunjilink-frontend-rdplczwop-aswanthnarayans-projects.vercel.app',
-    'https://kunjilink-backend.vercel.app'
+    'https://kunji-link.vercel.app',
+    'https://kunjilink.vercel.app'
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
