@@ -8,8 +8,24 @@ const redirectRoutes = require('./routes/redirect');
 
 const app = express();
 
+// CORS Configuration
+const corsOptions = {
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'https://kunji-link.vercel.app', 
+    'https://kunjilink.vercel.app' ,
+    'https://kunjilink-frontend-git-main-aswanthnarayans-projects.vercel.app/' ,
+    'https://kunjilink-frontend-rdplczwop-aswanthnarayans-projects.vercel.app/' ,
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Connect to MongoDB
