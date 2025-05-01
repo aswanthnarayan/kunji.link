@@ -41,7 +41,7 @@ To run the application:
 - **dev**: Uses nodemon to run the backend server with auto-reload.
 - **client**: Runs the frontend server.
 - **client:build**: Builds the frontend for production.
-
+  
 ## Dependencies
 - **bcryptjs**: For password hashing.
 - **cors**: Middleware for enabling CORS.
